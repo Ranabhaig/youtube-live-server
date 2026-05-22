@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 10000;
 const RTMP_URL = "rtmp://x.rtmp.youtube.com/live2";
 
 // YOUR STREAM KEY
-const STREAM_KEY = "qg6k-rm26-626f-7y1p-476a";
+const STREAM_KEY = process.env.STREAM_KEY;
 
 const wss = new WebSocket.Server({ port: PORT });
 
